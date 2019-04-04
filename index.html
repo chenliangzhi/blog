@@ -102,7 +102,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://github.com/chenliangzhi/blog/2019/04/05/css/" data-id="cju2s6xz80000ocddxk8qmm5l" class="article-share-link">Share</a>
+      <a data-url="http://github.com/chenliangzhi/blog/2019/04/05/css/" data-id="cju2sffe100001cdd5c5r77r0" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/css-重置样式/">css 重置样式</a></li></ul>
@@ -136,17 +136,18 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="vue-面试题"><a href="#vue-面试题" class="headerlink" title="vue 面试题"></a>vue 面试题</h1><blockquote>
+        <blockquote>
 <p>1,v-show 和v-if 的区别</p>
-<ol>
+<ul>
 <li>v-show指令是通过修改元素的displayCSS属性让其显示或者隐藏。</li>
 <li>v-if指令是直接销毁和重建DOM达到让元素显示和隐藏的效果。</li>
-</ol>
+</ul>
 </blockquote>
 <blockquote>
 <p>2, keep-alive 的作用是什么，如何使用？</p>
 <ul>
-<li>答：包裹动态组件时，会缓存不活动的组件实例，主要用于保留组件状态或避免重新渲染；<br>使用：简单页面时</li>
+<li>答：包裹动态组件时，会缓存不活动的组件实例，主要用于保留组件状态或避免重新渲染；</li>
+<li>使用：简单页面时</li>
 <li>缓存： keep-alive include=”组件名”</li>
 <li>不缓存：keep-alive exclude=”组件名”</li>
 </ul>
@@ -194,7 +195,7 @@
 </blockquote>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> qs <span class="keyword">from</span> <span class="string">'qs'</span></span><br><span class="line"><span class="keyword">var</span> data = qs.stringify(&#123;</span><br><span class="line">  number : <span class="string">'1'</span></span><br><span class="line">&#125;)</span><br><span class="line">Axios.post(url,data).then()</span><br></pre></td></tr></table></figure>
 <h4 id="三、返回值"><a href="#三、返回值" class="headerlink" title="三、返回值"></a>三、返回值</h4><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	<span class="attr">"ret"</span>: <span class="number">200</span>,</span><br><span class="line">	<span class="attr">"data"</span>: &#123;</span><br><span class="line">		<span class="attr">"rs"</span>: [&#123;</span><br><span class="line">				<span class="attr">"id"</span>: <span class="string">"4"</span>,</span><br><span class="line">				<span class="attr">"parent_id"</span>: <span class="string">"0"</span>,</span><br><span class="line">				<span class="attr">"category"</span>: <span class="string">""</span>,</span><br><span class="line">				<span class="attr">"name"</span>: <span class="string">"test1"</span>,</span><br><span class="line">				<span class="attr">"uri"</span>: <span class="string">"privilege_menu.parent"</span>,</span><br><span class="line">				<span class="attr">"is_show"</span>: <span class="string">"1"</span>,</span><br><span class="line">				<span class="attr">"status"</span>: <span class="string">"1"</span>,</span><br><span class="line">				<span class="attr">"create_at"</span>: <span class="string">"2019-03-06 22:06:11"</span>,</span><br><span class="line">				<span class="attr">"update_at"</span>: <span class="string">"2019-03-06 23:41:12"</span></span><br><span class="line">			&#125;,</span><br><span class="line">			&#123;</span><br><span class="line">				<span class="attr">"id"</span>: <span class="string">"5"</span>,</span><br><span class="line">				<span class="attr">"parent_id"</span>: <span class="string">"4"</span>,</span><br><span class="line">				<span class="attr">"category"</span>: <span class="string">""</span>,</span><br><span class="line">				<span class="attr">"name"</span>: <span class="string">"test2"</span>,</span><br><span class="line">				<span class="attr">"uri"</span>: <span class="string">"user.login"</span>,</span><br><span class="line">				<span class="attr">"is_show"</span>: <span class="string">"1"</span>,</span><br><span class="line">				<span class="attr">"status"</span>: <span class="string">"1"</span>,</span><br><span class="line">				<span class="attr">"create_at"</span>: <span class="string">"2019-03-06 22:06:40"</span>,</span><br><span class="line">				<span class="attr">"update_at"</span>: <span class="string">"2019-03-12 19:48:58"</span></span><br><span class="line">			&#125;</span><br><span class="line">		],</span><br><span class="line">		<span class="attr">"count"</span>: <span class="string">"6"</span>,</span><br><span class="line">		<span class="attr">"page"</span>: <span class="number">1</span>,</span><br><span class="line">		<span class="attr">"pageSize"</span>: <span class="number">20</span></span><br><span class="line">	&#125;,</span><br><span class="line">	<span class="attr">"msg"</span>: <span class="string">""</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h2 id="是不是有学习了一点点知识呢"><a href="#是不是有学习了一点点知识呢" class="headerlink" title="是不是有学习了一点点知识呢"></a><code>是不是有学习了一点点知识呢</code></h2><table>
+<h2 id="是不是又学习了一点点知识呢，加油！"><a href="#是不是又学习了一点点知识呢，加油！" class="headerlink" title="是不是又学习了一点点知识呢，加油！"></a><code>是不是又学习了一点点知识呢，加油！</code></h2><table>
 <thead>
 <tr>
 <th style="text-align:center">name</th>
@@ -261,7 +262,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://github.com/chenliangzhi/blog/2019/04/05/vue/" data-id="cju2s6xzh0003ocddyif23c8e" class="article-share-link">Share</a>
+      <a data-url="http://github.com/chenliangzhi/blog/2019/04/05/vue/" data-id="cju2sffee00051cddi1yh2s6f" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/vue相关知识/">vue相关知识</a></li></ul>
@@ -287,7 +288,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/blog/2019/04/05/js/">js</a>
+      <a class="article-title" href="/blog/2019/04/05/js/">js相关知识</a>
     </h1>
   
 
@@ -295,13 +296,18 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <blockquote>
+<p>尽情期待</p>
+</blockquote>
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://github.com/chenliangzhi/blog/2019/04/05/js/" data-id="cju2s6xzz000aocddidfcfinb" class="article-share-link">Share</a>
+      <a data-url="http://github.com/chenliangzhi/blog/2019/04/05/js/" data-id="cju2sffea00031cddrp6kk4me" class="article-share-link">Share</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/js-data/">js data</a></li></ul>
+
     </footer>
   </div>
   
@@ -340,7 +346,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://github.com/chenliangzhi/blog/2019/03/30/frist/" data-id="cju2s6xze0001ocddj9sygq7u" class="article-share-link">Share</a>
+      <a data-url="http://github.com/chenliangzhi/blog/2019/03/30/frist/" data-id="cju2sffec00041cddvz6lqni3" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/我就默默的敲代码，直到我敲不动的那一天。/">我就默默的敲代码，直到我敲不动的那一天。</a></li></ul>
@@ -388,7 +394,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://github.com/chenliangzhi/blog/2019/03/29/hello-world/" data-id="cju2s6xzi0004ocddn4z5te56" class="article-share-link">Share</a>
+      <a data-url="http://github.com/chenliangzhi/blog/2019/03/29/hello-world/" data-id="cju2sffe600011cddk7mdb2qm" class="article-share-link">Share</a>
       
       
     </footer>
@@ -411,7 +417,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tags</h3>
     <div class="widget">
-      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/css-重置样式/">css 重置样式</a></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/vue相关知识/">vue相关知识</a></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/我就默默的敲代码，直到我敲不动的那一天。/">我就默默的敲代码，直到我敲不动的那一天。</a></li></ul>
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/css-重置样式/">css 重置样式</a></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/js-data/">js data</a></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/vue相关知识/">vue相关知识</a></li><li class="tag-list-item"><a class="tag-list-link" href="/blog/tags/我就默默的敲代码，直到我敲不动的那一天。/">我就默默的敲代码，直到我敲不动的那一天。</a></li></ul>
     </div>
   </div>
 
@@ -421,7 +427,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/blog/tags/css-重置样式/" style="font-size: 10px;">css 重置样式</a> <a href="/blog/tags/vue相关知识/" style="font-size: 10px;">vue相关知识</a> <a href="/blog/tags/我就默默的敲代码，直到我敲不动的那一天。/" style="font-size: 10px;">我就默默的敲代码，直到我敲不动的那一天。</a>
+      <a href="/blog/tags/css-重置样式/" style="font-size: 10px;">css 重置样式</a> <a href="/blog/tags/js-data/" style="font-size: 10px;">js data</a> <a href="/blog/tags/vue相关知识/" style="font-size: 10px;">vue相关知识</a> <a href="/blog/tags/我就默默的敲代码，直到我敲不动的那一天。/" style="font-size: 10px;">我就默默的敲代码，直到我敲不动的那一天。</a>
     </div>
   </div>
 
@@ -451,7 +457,7 @@
           </li>
         
           <li>
-            <a href="/blog/2019/04/05/js/">js</a>
+            <a href="/blog/2019/04/05/js/">js相关知识</a>
           </li>
         
           <li>
