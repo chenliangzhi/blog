@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[css 相关知识]]></title>
+    <url>%2Fblog%2F2019%2F04%2F05%2Fcss%2F</url>
+    <content type="text"><![CDATA[1，每个浏览器的默认的样式不一样，所以写样式前，首先需要写一部分重置样式1234567891011121314151617181920*&#123; box-sizing: border-box;&#125;body,html,div,span,a,img ,i,table,thead,tbody,th,td,strong,input,textarea,p&#123; margin: 0;padding: 0;&#125;ul,li&#123; list-style: none;&#125;a&#123; text-decoration: none;&#125;table &#123; border-collapse: collapse; border-spacing: 0;&#125;fieldset,img &#123; border: 0;&#125; 2,写完重置样式文件之后，就开始写公共样式 公共样式一般取名为common.css,哪些是公共样式呢，很多页面都需要用到这个样式的就写在公共样式里面 字体大小，字体颜色，边框颜色，清除浮动等等 不过这些一般都可以用sass、less等方式来编译css 3,flex布局 flex布局一般用在移动端，在pc端个别浏览器兼容性不是很好 flex相关知识点]]></content>
+      <tags>
+        <tag>css 重置样式</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[vue 面试题]]></title>
+    <url>%2Fblog%2F2019%2F04%2F05%2Fvue%2F</url>
+    <content type="text"><![CDATA[1,v-show 和v-if 的区别 v-show指令是通过修改元素的displayCSS属性让其显示或者隐藏。 v-if指令是直接销毁和重建DOM达到让元素显示和隐藏的效果。 2, keep-alive 的作用是什么，如何使用？ 答：包裹动态组件时，会缓存不活动的组件实例，主要用于保留组件状态或避免重新渲染； 使用：简单页面时 缓存： keep-alive include=”组件名” 不缓存：keep-alive exclude=”组件名” 3,说出至少4种vue当中的指令和它的用法？ v-if：判断是否隐藏； v-for：数据循环出来； v-bind:class：绑定一个属性； v-model：实现双向绑定 v-on：事件绑定 4, css只在当前组件起作用 答：在style标签中写入scoped即可 5, vue.js的两个核心是什么？ 答：数据驱动、组件系统 6,v-on 可以绑定多个方法吗？ 答： 可以 7, vue中 key 值的作用？ 答：当 Vue.js 用 v-for 正在更新已渲染过的元素列表时，它默认用“就地复用”策略。如果数据项的顺序被改变，Vue 将不会移动 DOM 元素来匹配数据项的顺序， 而是简单复用此处每个元素，并且确保它在特定索引下显示已被渲染过的每个元素。key的作用主要是为了高效的更新虚拟DOM。 8, vue等单页面应用及其优缺点 优点：Vue 的目标是通过尽可能简单的 API 实现响应的数据绑定和组合的视图组件，核心是一个响应的数据绑定系统。MVVM、数据驱动、组件化、轻量、简洁、高效、快速、模块友好。 缺点：不支持低版本的浏览器，最低只支持到IE9；不利于SEO的优化（如果要支持SEO，建议通过服务端来进行渲染组件）9,Axios发送post请求 12345import qs from 'qs'var data = qs.stringify(&#123; number : '1'&#125;)Axios.post(url,data).then() 三、返回值1234567891011121314151617181920212223242526272829303132&#123; "ret": 200, "data": &#123; "rs": [&#123; "id": "4", "parent_id": "0", "category": "", "name": "test1", "uri": "privilege_menu.parent", "is_show": "1", "status": "1", "create_at": "2019-03-06 22:06:11", "update_at": "2019-03-06 23:41:12" &#125;, &#123; "id": "5", "parent_id": "4", "category": "", "name": "test2", "uri": "user.login", "is_show": "1", "status": "1", "create_at": "2019-03-06 22:06:40", "update_at": "2019-03-12 19:48:58" &#125; ], "count": "6", "page": 1, "pageSize": 20 &#125;, "msg": ""&#125; 是不是又学习了一点点知识呢，加油！ name 是否必须 描述 username yes 用户名 password yes 密码 token no token Vue组件间的参数传递1.父组件与子组件传值 父组件传给子组件：子组件通过props方法接受数据; 子组件传给父组件：$emit方法传递参数 2.非父子组件间的数据传递，兄弟组件传值 eventBus，就是创建一个事件中心，相当于中转站，可以用它来传递事件和接收事件。项目比较小时，用这个比较合适。（也有不少人推荐直接用VUEX) Vuex有哪几种属性？ 五种：state，action，mutation，getter，module State：数据源存放地，数据是响应式的 Action: 逻辑处理，提交的是mutation,包含任意异步操作 Mutation: 修改state里的公共数据 Getter: 相当于计算属性，可以复用，可缓存 Module: 模块化 vue路由的钩子函数 首页可以控制导航跳转，beforeEach，afterEach等，一般用于页面title的修改。一些需要登录才调整页面的重定向功能。 beforeEach主要有3个参数to，from，next： to：route即将进入的目标路由对象， from：route当前导航正要离开的路由 next：function一定要调用该方法resolve这个钩子。执行效果依赖next方法的调用参数。可以控制网页的跳转。]]></content>
+      <tags>
+        <tag>vue相关知识</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[js相关知识]]></title>
+    <url>%2Fblog%2F2019%2F04%2F05%2Fjs%2F</url>
+    <content type="text"><![CDATA[尽情期待]]></content>
+      <tags>
+        <tag>js data</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[来编写 Hello World]]></title>
+    <url>%2Fblog%2F2019%2F03%2F31%2Fhello-world%2F</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. 快速开始Create a new post1$ hexo new "My New Post" More info: Writing 运行1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment 1$ hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy]]></content>
+      <tags>
+        <tag>第一次用hexo</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[第一篇文章]]></title>
+    <url>%2Fblog%2F2019%2F03%2F30%2Ffrist%2F</url>
+    <content type="text"><![CDATA[大家好，我是Anthony，前端三年，但我个人认为我还是个菜鸟，看到啥啥都不会。一直以来想弄个个人博客，但就一直拖到现在。今天就好好静下心来，写好自己博客的第一篇文章，这个hexo搭建的博客，我也是第一次接触，markdown也是第一次接触，所以弄了我三四个小时才把这个博客给搭好。换做很多前端同仁，都是用node.js+vue.js+后端开发自己的博客了。 不管那么多，既然开始了，那么就好好的做好自己的个人博客，一方面是把之前学习的知识整理一下，另一方面看看自己需要学习那些（我感觉我什么都要学，因为我什么都不会。） 前端时间刚刚学习vue，就想用vue.js写个博客，但是一看，node.js不会，后端不会，又要去学习，我瞬间想学习可以，但我还是先是实现一下用hexo来快速搭建一个博客。以后就在这里把资料整理一下放到这里来。这样也不至于到处找笔记了。 弄这个博客，我就是想让自己动起来，看再多的代码和视频，自己不去动手敲代码，那进步肯定很慢，所以我就想好好的学习。看着那么多的人的博客分析的很好，技术掌握的也透彻.]]></content>
+      <tags>
+        <tag>终于有自己的博客啦！</tag>
+      </tags>
+  </entry>
+</search>
