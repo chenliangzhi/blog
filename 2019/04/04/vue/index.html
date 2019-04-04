@@ -5,19 +5,20 @@
   
 
   
-  <title>陈良智-博客</title>
+  <title>Vue面试题 | 陈良智-博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="clz- 安东尼博客">
+  <meta name="description" content="vue 面试题 1,v-show 和v-if 的区别  v-show指令是通过修改元素的displayCSS属性让其显示或者隐藏。 v-if指令是直接销毁和重建DOM达到让元素显示和隐藏的效果。    2, keep-alive 的作用是什么，如何使用？  答：包裹动态组件时，会缓存不活动的组件实例，主要用于保留组件状态或避免重新渲染；使用：简单页面时 缓存： keep-alive include">
 <meta name="keywords" content="博客,anthony,安东尼,学习">
-<meta property="og:type" content="website">
-<meta property="og:title" content="陈良智-博客">
-<meta property="og:url" content="http://github.com/chenliangzhi/blog/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Vue面试题">
+<meta property="og:url" content="http://github.com/chenliangzhi/blog/2019/04/04/vue/index.html">
 <meta property="og:site_name" content="陈良智-博客">
-<meta property="og:description" content="clz- 安东尼博客">
+<meta property="og:description" content="vue 面试题 1,v-show 和v-if 的区别  v-show指令是通过修改元素的displayCSS属性让其显示或者隐藏。 v-if指令是直接销毁和重建DOM达到让元素显示和隐藏的效果。    2, keep-alive 的作用是什么，如何使用？  答：包裹动态组件时，会缓存不活动的组件实例，主要用于保留组件状态或避免重新渲染；使用：简单页面时 缓存： keep-alive include">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2019-04-04T13:32:02.693Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="陈良智-博客">
-<meta name="twitter:description" content="clz- 安东尼博客">
+<meta name="twitter:title" content="Vue面试题">
+<meta name="twitter:description" content="vue 面试题 1,v-show 和v-if 的区别  v-show指令是通过修改元素的displayCSS属性让其显示或者隐藏。 v-if指令是直接销毁和重建DOM达到让元素显示和隐藏的效果。    2, keep-alive 的作用是什么，如何使用？  答：包裹动态组件时，会缓存不活动的组件实例，主要用于保留组件状态或避免重新渲染；使用：简单页面时 缓存： keep-alive include">
   
     <link rel="alternate" href="/blog/atom.xml" title="陈良智-博客" type="application/atom+xml">
   
@@ -64,60 +65,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-css" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/blog/2019/04/04/css/" class="article-date">
-  <time datetime="2019-04-04T13:31:16.233Z" itemprop="datePublished">2019-04-04</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/blog/2019/04/04/css/">css相关知识</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="css-重置样式"><a href="#css-重置样式" class="headerlink" title="css 重置样式"></a>css 重置样式</h1><blockquote>
-<p>1，每个浏览器的默认的样式不一样，所以写样式前，首先需要写一部分重置样式<br><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">*&#123;</span><br><span class="line">    <span class="attribute">box-sizing</span>: border-box;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">body</span>,<span class="selector-tag">html</span>,<span class="selector-tag">div</span>,<span class="selector-tag">span</span>,<span class="selector-tag">a</span>,<span class="selector-tag">img</span> ,<span class="selector-tag">i</span>,<span class="selector-tag">table</span>,<span class="selector-tag">thead</span>,<span class="selector-tag">tbody</span>,<span class="selector-tag">th</span>,<span class="selector-tag">td</span>,<span class="selector-tag">strong</span>,</span><br><span class="line"><span class="selector-tag">input</span>,<span class="selector-tag">textarea</span>,<span class="selector-tag">p</span>&#123;</span><br><span class="line">    <span class="attribute">margin</span>: <span class="number">0</span>;<span class="attribute">padding</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">ul</span>,<span class="selector-tag">li</span>&#123;</span><br><span class="line">    <span class="attribute">list-style</span>: none;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">a</span>&#123;</span><br><span class="line">    <span class="attribute">text-decoration</span>: none;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">table</span> &#123;</span><br><span class="line">    <span class="attribute">border-collapse</span>: collapse;</span><br><span class="line">    <span class="attribute">border-spacing</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">fieldset</span>,<span class="selector-tag">img</span> &#123;</span><br><span class="line">    <span class="attribute">border</span>: <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
-</blockquote>
-<blockquote>
-<p>2,写完重置样式文件之后，就开始写公共样式</p>
-<ul>
-<li>公共样式一般取名为common.css,哪些是公共样式呢，很多页面都需要用到这个样式的就写在公共样式里面<ol>
-<li>字体大小，字体颜色，边框颜色，清除浮动等等</li>
-<li>不过这些一般都可以用sass、less等方式来编译css<br>3, flex布局</li>
-</ol>
-</li>
-<li>flex布局一般用在移动端，在pc端个别浏览器兼容性不是很好</li>
-<li>flex相关知识点</li>
-</ul>
-</blockquote>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://github.com/chenliangzhi/blog/2019/04/04/css/" data-id="cju2p02m400007kdd7kwmqoqv" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-vue" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-vue" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/blog/2019/04/04/vue/" class="article-date">
   <time datetime="2019-04-04T12:39:59.018Z" itemprop="datePublished">2019-04-04</time>
@@ -130,8 +78,8 @@
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/blog/2019/04/04/vue/">Vue面试题</a>
+    <h1 class="article-title" itemprop="name">
+      Vue面试题
     </h1>
   
 
@@ -270,100 +218,28 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-frist" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/blog/2019/03/30/frist/" class="article-date">
-  <time datetime="2019-03-30T02:04:33.000Z" itemprop="datePublished">2019-03-30</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+    <a href="/blog/2019/04/04/css/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
         
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/blog/2019/03/30/frist/">终于有自己的博客啦！</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <ul>
-<li>大家好，我是Anthony，前端三年，但我个人认为我还是个菜鸟，看到啥啥都不会。一直以来想弄个个人博客，但就一直拖到现在。今天就好好静下心来，写好自己博客的第一篇文章，这个hexo搭建的博客，我也是第一次接触，markdown也是第一次接触，所以弄了我三四个小时才把这个博客给搭好。换做很多前端同仁，都是用node.js+vue.js+后端开发自己的博客了。<br>  不管那么多，既然开始了，那么就好好的做好自己的个人博客，一方面是把之前学习的知识整理一下，另一方面看看自己需要学习那些（我感觉我什么都要学，因为我什么都不会。）</li>
-<li>前端时间刚刚学习vue，就想用vue.js写个博客，但是一看，node.js不会，后端不会，又要去学习，我瞬间想学习可以，但我还是先是实现一下用hexo来快速搭建一个博客。以后就在这里把资料整理一下<br>放到这里来。这样也不至于到处找笔记了。</li>
-<li>弄这个博客，我就是想让自己动起来，看再多的代码和视频，自己不去动手敲代码，那进步肯定很慢，所以我就想好好的学习。看着那么多的人的博客分析的很好，技术掌握的也透彻.</li>
-</ul>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://github.com/chenliangzhi/blog/2019/03/30/frist/" data-id="cju2p02m900017kddkez2ydzs" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/blog/tags/我就默默的敲代码，直到我敲不动的那一天。/">我就默默的敲代码，直到我敲不动的那一天。</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/blog/2019/03/29/hello-world/" class="article-date">
-  <time datetime="2019-03-29T14:27:41.539Z" itemprop="datePublished">2019-03-29</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
+          css相关知识
         
+      </div>
+    </a>
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/blog/2019/03/29/hello-world/">第一次用hexo 来编写 Hello World</a>
-    </h1>
   
+    <a href="/blog/2019/03/30/frist/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">终于有自己的博客啦！</div>
+    </a>
+  
+</nav>
 
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="快速开始"><a href="#快速开始" class="headerlink" title="快速开始"></a>快速开始</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy</span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://github.com/chenliangzhi/blog/2019/03/29/hello-world/" data-id="cju2p02mp00057kddecez6eip" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-
 
 </section>
         
